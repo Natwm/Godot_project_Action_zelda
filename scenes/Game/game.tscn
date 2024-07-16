@@ -15,6 +15,10 @@ material = SubResource("StandardMaterial3D_n2udx")
 
 [node name="CSGMesh3D" type="CSGMesh3D" parent="."]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -5.02349, 0)
+use_collision = true
 mesh = SubResource("BoxMesh_2rnep")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_tvccw")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 5.18152, 10.5056)
