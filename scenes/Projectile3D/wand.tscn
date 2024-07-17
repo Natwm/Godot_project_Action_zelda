@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://j6craed7uyu7"]
+
+[ext_resource type="Script" path="res://scenes/wand/wand.gd" id="1_ejyv6"]
+[ext_resource type="PackedScene" uid="uid://drcufa6r8511s" path="res://scenes/Projectile3D/projectile_3d.tscn" id="2_vh4pv"]
+
+[node name="wand" type="Marker3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.315478, 0.422255, -0.446523)
+script = ExtResource("1_ejyv6")
+projectile_scene = ExtResource("2_vh4pv")
+fire_rate = 12.1
+
+[node name="Timer" type="Timer" parent="."]
+unique_name_in_owner = true
+one_shot = true
+
+[node name="Projectile3D" parent="." instance=ExtResource("2_vh4pv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.26186)
+visible = false
+monitoring = false
+monitorable = false
