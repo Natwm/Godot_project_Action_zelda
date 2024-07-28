@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://dt0eer60l7i60"]
+
+[ext_resource type="Script" path="res://scenes/Dummy/dummy.gd" id="1_ac7u4"]
+[ext_resource type="Script" path="res://scenes/Hit_Hurt_Box/HurtBox3D.gd" id="3_wh4qg"]
+[ext_resource type="PackedScene" uid="uid://dqiin62cguslw" path="res://scenes/healthManager/health_manager.tscn" id="4_16u3y"]
+[ext_resource type="PackedScene" uid="uid://wvkv80bf4xdy" path="res://scenes/Adversaire/FBX/Base_Skeletton_assassin.tscn" id="4_815c3"]
+[ext_resource type="Script" path="res://scenes/Adversaire/Scripts/Animation/Skeleton_Minion_anim.gd" id="6_1djrr"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_3kvax"]
+height = 1.0
+radius = 0.4
+
+[node name="Dummy" type="CharacterBody3D" node_paths=PackedStringArray("dummy_skin")]
+script = ExtResource("1_ac7u4")
+dummy_skin = NodePath("Base_Skelleton_ass_skin")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CylinderShape3D_3kvax")
+
+[node name="HurtBox3D" type="Area3D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("3_wh4qg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HurtBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CylinderShape3D_3kvax")
+
+[node name="HealthManager" parent="." instance=ExtResource("4_16u3y")]
+unique_name_in_owner = true
+health = -1
+
+[node name="Base_Skelleton_ass_skin" parent="." instance=ExtResource("4_815c3")]
+transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0, 0)
+script = ExtResource("6_1djrr")
+animation_damage = "Hit_A"

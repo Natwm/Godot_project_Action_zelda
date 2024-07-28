@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bamtpes103kq"]
+[gd_scene load_steps=10 format=3 uid="uid://bamtpes103kq"]
 
 [ext_resource type="Texture2D" uid="uid://brbtohct73mlt" path="res://assets/level/checkboard.png" id="1_23x6y"]
 [ext_resource type="PackedScene" uid="uid://cq80f8whu3em6" path="res://scenes/player/Character.tscn" id="2_tvccw"]
 [ext_resource type="PackedScene" uid="uid://bc5xsl0pnqvjh" path="res://scenes/Dummy/dummy.tscn" id="3_k25t7"]
 [ext_resource type="Script" path="res://scenes/Hit_Hurt_Box/HitBox3D.gd" id="4_oeicd"]
+[ext_resource type="PackedScene" uid="uid://dt0eer60l7i60" path="res://scenes/Adversaire/Adversaire.tscn" id="5_fj231"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n2udx"]
 albedo_texture = ExtResource("1_23x6y")
@@ -44,3 +45,6 @@ script = ExtResource("4_oeicd")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CSGMesh3D2/HitBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.644397)
 shape = SubResource("BoxShape3D_ov6ye")
+
+[node name="Dummy2" parent="." instance=ExtResource("5_fj231")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
