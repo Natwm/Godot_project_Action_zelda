@@ -1,4 +1,5 @@
 extends CharacterBody3D
+class_name PlayerCharacter
 
 ### CONST ###
 
@@ -114,3 +115,4 @@ func play_animation(direction : Vector3) -> void:
 func player_get_damage(hit:HitBox3D):
 	health_manager.take_damage()
 	pass
+
