@@ -123,7 +123,7 @@ _data = {
 animation = &"idle"
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_mc74q"]
-graph_offset = Vector2(-18, 0)
+graph_offset = Vector2(-303, 28)
 nodes/Animation/node = SubResource("AnimationNodeAnimation_5axn0")
 nodes/Animation/position = Vector2(-51, 107)
 nodes/output/position = Vector2(360, 160)
@@ -136,24 +136,24 @@ script = ExtResource("1_uvklm")
 unique_name_in_owner = true
 
 [node name="Skeleton3D" parent="dummy/RIG-Armature" index="0"]
-bones/0/position = Vector3(0.0831276, 1.07375, -0.215313)
-bones/0/rotation = Quaternion(-0.379432, 0.0319009, -0.0239636, 0.924359)
+bones/0/position = Vector3(-0.0215459, 1.0768, -0.209969)
+bones/0/rotation = Quaternion(-0.373337, 0.08465, 0.102832, 0.918085)
 bones/0/scale = Vector3(1, 1, 1)
-bones/1/rotation = Quaternion(-9.10289e-08, 1.89926e-09, 0.0514996, 0.998673)
-bones/2/rotation = Quaternion(9.69994e-08, -9.48104e-09, 0.0657097, 0.997839)
-bones/3/position = Vector3(0.0320486, 0.623798, 0.0008154)
-bones/3/rotation = Quaternion(0.00186981, -0.000626532, -0.0562395, 0.998415)
-bones/4/position = Vector3(0.0123256, 0.408903, 5.96132e-08)
-bones/4/rotation = Quaternion(0.989385, -0.0450461, -0.137913, -0.00818901)
-bones/5/position = Vector3(0.148643, 0.547804, 0.00070767)
-bones/5/rotation = Quaternion(-0.488069, -0.513386, -0.459811, 0.535535)
+bones/1/rotation = Quaternion(-8.13905e-08, 4.09311e-09, 0.0410015, 0.999159)
+bones/2/rotation = Quaternion(7.89134e-08, -2.38417e-09, 0.0171973, 0.999852)
+bones/3/position = Vector3(0.0298315, 0.624094, 0.000245608)
+bones/3/rotation = Quaternion(0.00409781, 0.076029, 0.0206385, 0.996884)
+bones/4/position = Vector3(0.0242792, 0.408368, 6.42211e-08)
+bones/4/rotation = Quaternion(0.998199, -0.01281, -0.0585897, -0.00133085)
+bones/5/position = Vector3(0.149744, 0.555989, -0.0185117)
+bones/5/rotation = Quaternion(-0.472555, -0.509004, -0.398646, 0.598906)
 bones/5/scale = Vector3(1, 1, 1)
-bones/6/position = Vector3(-0.096431, 0.570298, 0.000431829)
-bones/6/rotation = Quaternion(-0.400147, 0.584333, 0.42877, 0.560887)
+bones/6/position = Vector3(-0.0934271, 0.562205, 0.018855)
+bones/6/rotation = Quaternion(-0.412721, 0.586143, 0.489519, 0.496457)
 bones/6/scale = Vector3(1, 1, 1)
-bones/7/position = Vector3(0.0123256, 0.408903, 4.68375e-09)
-bones/7/rotation = Quaternion(0.00186037, -0.000524279, -0.0449688, 0.998987)
-bones/8/rotation = Quaternion(-0.000414703, -0.0301772, -0.0146548, 0.999437)
+bones/7/position = Vector3(0.0242792, 0.408368, 5.20424e-09)
+bones/7/rotation = Quaternion(0.00154732, 0.0761236, -0.012785, 0.997015)
+bones/8/rotation = Quaternion(0.000262321, 0.0148302, -0.0266215, 0.999536)
 
 [node name="dummy2" parent="dummy/RIG-Armature/Skeleton3D" index="0"]
 material_override = ExtResource("3_wu7ut")
