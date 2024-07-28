@@ -18,7 +18,6 @@ func _init() -> void:
 	monitoring = true
 	monitorable = true
 	area_entered.connect(func _on_area_entered(area: Area3D) -> void:
-		print(area.owner.name)
 		if area is HitBox3D:
 			took_hit.emit(area)
 	)
