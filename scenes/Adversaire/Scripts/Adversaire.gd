@@ -10,10 +10,14 @@ const GRAVITY : Vector3 = 40 * Vector3.DOWN
 @export_category("Statistics")
 @export_range(3.0,12.0,0.1) var max_speed : float = 6
 @export_range(3.0,12.0,0.1) var steering_factor : float = 20
+@export_range(1.5,12.0,0.1) var attack_speed : float = 20
+@export var max_distance_to_player : float = 20
+@export var min_distance_to_ATTACK : float = 20
 
 ### On Ready ###
 @onready var player_detection_area = $player_detection_area
 @onready var state_manager : StateMachine = $StateManager
+@onready var hit_box_3d = $HitBox3D
 
 ### VARIABLE ###
 var target : CharacterBody3D
@@ -73,17 +77,13 @@ func change_state(new_state: int) -> void:
 
 ### Signals Connexion ###
 func _on_player_detection_area_area_entered(area):
-	print("pp")
 	if(area.owner is PlayerCharacter):
-		print("ok")
 		target = area.owner
 		state_manager.transition_to("CHASING")
 	pass # Replace with function body.
 
 func _on_player_detection_area_area_exited(area):
-	print("pp")
 	if(area.owner is PlayerCharacter):
-		print("pas ok")
 		state_manager.transition_to("IDLE")
 		target = null
 	pass # Replace with function body.
