@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dh08fenuete05"
+path.s3tc="res://.godot/imported/candle_triple-ae5d6b3505085a45c4f6cf29ad17b007_dungeon_texture.png-031ae61eea2adcd28ecf8fd580ae0c0f.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://assets/Addon_3D_asset/KayKit_DungeonRemastered_1.1_FREE/Assets/fbx/candle_triple-ae5d6b3505085a45c4f6cf29ad17b007_dungeon_texture.png"
+dest_files=["res://.godot/imported/candle_triple-ae5d6b3505085a45c4f6cf29ad17b007_dungeon_texture.png-031ae61eea2adcd28ecf8fd580ae0c0f.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

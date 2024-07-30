@@ -11,6 +11,7 @@ height = 1.0
 radius = 0.4
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
+collision_layer = 2
 script = ExtResource("1_61tsl")
 max_speed_dash = 12.0
 

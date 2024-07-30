@@ -2653,7 +2653,7 @@ parameters/FlipShot/request = 0
 parameters/StateMachine/Run/Add2/add_amount = 1.0
 
 [node name="HandR" type="BoneAttachment3D" parent="."]
-transform = Transform3D(-0.186682, -0.15354, 0.970348, -0.784776, -0.570873, -0.24131, 0.590996, -0.806554, -0.0139226, 0.255982, 0.31042, -0.119228)
+transform = Transform3D(0.186681, 0.153539, -0.970348, -0.784776, -0.570872, -0.241309, -0.590996, 0.806554, 0.0139229, -0.255982, 0.31042, 0.119228)
 bone_name = "Thumb_1.R"
 bone_idx = 18
 use_external_skeleton = true
@@ -2677,7 +2677,7 @@ process_material = SubResource("ParticleProcessMaterial_1wbwy")
 draw_pass_1 = SubResource("QuadMesh_ganpw")
 
 [node name="Head" type="BoneAttachment3D" parent="."]
-transform = Transform3D(-0.999284, 1.72295e-08, -0.0378357, 1.76868e-08, 1, -1.49012e-08, 0.0378357, -1.50625e-15, -0.999284, -0.00100036, 0.549059, -0.0264208)
+transform = Transform3D(0.999284, -2.65427e-08, 0.0378357, 2.25763e-08, 1, 1.19209e-07, -0.0378357, -1.3411e-07, 0.999284, 0.00100036, 0.549059, 0.0264207)
 bone_name = "Head"
 bone_idx = 24
 use_external_skeleton = true
@@ -2695,14 +2695,14 @@ bones/2/rotation = Quaternion(-0.0938582, -1.18683e-07, -1.11888e-08, 0.995586)
 material_override = ExtResource("13_4ophv")
 
 [node name="WiggleBone" type="BoneAttachment3D" parent="Head/WitchHat/HatRig/Skeleton3D" index="1"]
-transform = Transform3D(0.998526, -0.0542735, -0.000753334, 0.0303354, 0.546496, 0.836912, -0.0450104, -0.835701, 0.547336, 2.66794e-14, 0.344469, -0.117855)
+transform = Transform3D(1, 6.39488e-13, 2.38418e-07, -1.95838e-07, 0.570345, 0.821405, -1.3598e-07, -0.821405, 0.570345, 2.66794e-14, 0.344469, -0.117855)
 bone_name = "Bone.001"
 bone_idx = 1
 script = ExtResource("14_cnajq")
 properties = SubResource("Resource_gd5rt")
 
 [node name="WiggleBone2" type="BoneAttachment3D" parent="Head/WitchHat/HatRig/Skeleton3D" index="2"]
-transform = Transform3D(0.997274, -0.0729334, -0.0112045, 0.0378361, 0.375069, 0.926224, -0.0633502, -0.924123, 0.376806, -0.0158374, 0.503941, -0.36172)
+transform = Transform3D(1, 8.56204e-13, -6.39488e-13, 2.84217e-13, 0.406786, 0.913523, 1.0516e-12, -0.913524, 0.406786, 2.13287e-13, 0.5109, -0.357548)
 bone_name = "Bone.002"
 bone_idx = 2
 script = ExtResource("14_cnajq")
@@ -2722,14 +2722,14 @@ bones/1/rotation = Quaternion(-0.379553, 1.41391e-16, -3.44645e-16, 0.92517)
 surface_material_override/0 = SubResource("ShaderMaterial_le7dl")
 
 [node name="WiggleBone" type="BoneAttachment3D" parent="Head/CapeAnchor/cape/Armature/Skeleton3D" index="1"]
-transform = Transform3D(0.998195, -0.0600077, -0.00236264, -0.00236264, -0.0785519, 0.996907, -0.0600077, -0.995102, -0.0785519, 1.03644e-17, 0.0031355, 0.0155397)
+transform = Transform3D(1, -7.45041e-16, 0, 0, 0, 1, -7.45041e-16, -1, 0, 1.03644e-17, 0.0031355, 0.0155397)
 bone_name = "Tip"
 bone_idx = 0
 script = ExtResource("14_cnajq")
 properties = SubResource("Resource_i30jw")
 
 [node name="WiggleBone2" type="BoneAttachment3D" parent="Head/CapeAnchor/cape/Armature/Skeleton3D" index="2"]
-transform = Transform3D(0.989209, -0.133651, -0.0600167, -0.0854261, -0.858977, 0.504837, -0.119025, -0.494263, -0.861125, -0.0178841, -0.0202753, -0.281031)
+transform = Transform3D(1, 3.17637e-22, -6.88214e-22, 6.61744e-22, -0.702302, 0.711879, -2.11758e-22, -0.711879, -0.702302, -2.1168e-16, 0.0031355, -0.28249)
 bone_name = "Tail"
 bone_idx = 1
 script = ExtResource("14_cnajq")

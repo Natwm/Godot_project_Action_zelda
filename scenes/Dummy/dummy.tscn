@@ -9,8 +9,9 @@
 height = 1.0
 radius = 0.4
 
-[node name="Dummy" type="CharacterBody3D"]
+[node name="Dummy" type="CharacterBody3D" node_paths=PackedStringArray("dummy_skin")]
 script = ExtResource("1_lmta1")
+dummy_skin = NodePath("DummySkin")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)

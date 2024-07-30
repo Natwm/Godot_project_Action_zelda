@@ -1,10 +1,9 @@
 class_name dummy3D
 extends CharacterBody3D
 
-@onready var dummy_skin = %DummySkin
+@export var dummy_skin :Node3D
 @onready var hurt_box_3d = %HurtBox3D
 @onready var health_manager : Health_Manager = %HealthManager
-
 
 func _ready() -> void:
 	hurt_box_3d.took_hit.connect(_on_hurt_box_took_hit)

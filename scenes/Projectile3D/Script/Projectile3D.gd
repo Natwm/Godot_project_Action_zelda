@@ -44,7 +44,7 @@ func _process(delta: float) -> void:
 func _destroy() -> void:
 	set_physics_process(false)
 	visible = false
-	hit_hurt_box.disconnect(_on_hit)
+	#hit_hurt_box.disconnect(_on_hit)
 	monitorable = false
 	monitoring = false
 	pass
