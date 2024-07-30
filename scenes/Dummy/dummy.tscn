@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bc5xsl0pnqvjh"]
+[gd_scene load_steps=6 format=3 uid="uid://bc5xsl0pnqvjh"]
 
 [ext_resource type="Script" path="res://scenes/Dummy/dummy.gd" id="1_lmta1"]
 [ext_resource type="PackedScene" uid="uid://ddjouhm76gjbx" path="res://assets/skins/dummy/dummy_skin_3d.tscn" id="1_qgcmq"]
 [ext_resource type="Script" path="res://scenes/Hit_Hurt_Box/HurtBox3D.gd" id="2_j6ykn"]
+[ext_resource type="PackedScene" uid="uid://dqiin62cguslw" path="res://scenes/healthManager/health_manager.tscn" id="4_csg83"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_3kvax"]
 height = 1.0
@@ -25,3 +26,7 @@ script = ExtResource("2_j6ykn")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="HurtBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("CylinderShape3D_3kvax")
+
+[node name="HealthManager" parent="." instance=ExtResource("4_csg83")]
+unique_name_in_owner = true
+health = -1
