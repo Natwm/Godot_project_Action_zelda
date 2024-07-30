@@ -14,7 +14,7 @@ unique_name_in_owner = true
 one_shot = true
 
 [node name="Projectile3D" parent="." instance=ExtResource("2_vh4pv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.26186)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.912803)
 visible = false
 collision_layer = 3
 monitoring = false
