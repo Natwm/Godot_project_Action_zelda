@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbxd31fs3f2h4"]
+
+[ext_resource type="ArrayMesh" uid="uid://d4cetrwgwoaam" path="res://assets/Addon_3D_asset/KayKit_DungeonRemastered_1.1_FREE/Assets/obj/floor_tile_large.obj" id="1_oqo2j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yhfeh"]
+size = Vector3(4, 0.1, 4)
+
+[node name="Floor" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_oqo2j")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_yhfeh")

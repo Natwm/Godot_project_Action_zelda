@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://begks8k7b51b7"]
+
+[ext_resource type="ArrayMesh" uid="uid://cx23gjvdp7sfq" path="res://assets/Addon_3D_asset/KayKit_DungeonRemastered_1.1_FREE/Assets/obj/wall.obj" id="1_ncm01"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c08ki"]
+size = Vector3(4, 4, 1)
+
+[node name="WallObject" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ncm01")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_c08ki")
