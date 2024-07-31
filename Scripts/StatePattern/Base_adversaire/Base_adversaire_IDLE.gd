@@ -10,6 +10,7 @@ func update(_delta: float) -> void:
 # is a dictionary with arbitrary data the state can use to initialize itself.
 func enter(_msg := {}) -> void:
 	print("IDLE")
+	owner.base_skelleton_ass_skin.play_idle_animation()
 	owner.player_detection_area.monitorable = true
 	owner.player_detection_area.monitoring = true
 	pass

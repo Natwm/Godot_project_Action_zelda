@@ -14,20 +14,19 @@
 height = 1.0
 radius = 0.4
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_d36gf"]
-height = 1.0
-radius = 10.0
-
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_y2dk3"]
 height = 1.0
 radius = 0.7
 
-[node name="Dummy" type="CharacterBody3D" node_paths=PackedStringArray("dummy_skin")]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_tls1s"]
+height = 1.0
+radius = 10.0
+
+[node name="Dummy" type="CharacterBody3D"]
 collision_layer = 2
 script = ExtResource("1_0frx7")
 max_speed = 3.0
 steering_factor = 10.0
-dummy_skin = NodePath("Base_Skelleton_ass_skin")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
@@ -44,35 +43,27 @@ hurtbox_type = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("CylinderShape3D_3kvax")
 
-[node name="HealthManager" parent="." instance=ExtResource("4_16u3y")]
-unique_name_in_owner = true
-health = 3
-
-[node name="Base_Skelleton_ass_skin" parent="." instance=ExtResource("4_815c3")]
-transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0, 0)
-
-[node name="player_detection_area" type="Area3D" parent="."]
-unique_name_in_owner = true
-transform = Transform3D(0.55, 0, 0, 0, 0.55, 0, 0, 0, 0.55, 0, 0, 0)
-monitoring = false
-monitorable = false
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="player_detection_area"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-shape = SubResource("CylinderShape3D_d36gf")
-
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="player_detection_area"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-radius = 10.0
-height = 1.0
-sides = 15
-
 [node name="HitBox3D" type="Area3D" parent="."]
 script = ExtResource("5_l77nt")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="HitBox3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("CylinderShape3D_y2dk3")
+
+[node name="HealthManager" parent="." instance=ExtResource("4_16u3y")]
+unique_name_in_owner = true
+health = 3
+
+[node name="Base_Skelleton_ass_skin" parent="." instance=ExtResource("4_815c3")]
+transform = Transform3D(-0.55, 0, -4.80825e-08, 0, 0.55, 0, 4.80825e-08, 0, -0.55, 0, 0, 0)
+
+[node name="player_detection_area" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player_detection_area"]
+shape = SubResource("CylinderShape3D_tls1s")
 
 [node name="StateManager" type="Node" parent="."]
 script = ExtResource("6_hsl1g")
